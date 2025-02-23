@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Dr. Siddharth Roheda</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .paper-buttons {
+            margin-top: 10px;
+        }
+        .paper-buttons button {
+            display: inline-block;
+            padding: 5px 10px;
+            margin-right: 5px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .paper-buttons button:hover {
+            background-color: #0056b3;
+        }
+        .abstract {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border-left: 3px solid #007bff;
+            background-color: #f9f9f9;
+        }
+    </style>
+    <script>
+        function toggleAbstract(id) {
+            var abstract = document.getElementById(id);
+            if (abstract.style.display === "none" || abstract.style.display === "") {
+                abstract.style.display = "block";
+            } else {
+                abstract.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>Publications</h1>
+    </header>
+
+    <section>
+        <h2>Selected Publications</h2>
+        
+        <article>
+            <h3>Title of Paper 1</h3>
+            <p><strong>Authors:</strong> A. Author, B. Author, Siddharth Roheda</p>
+            <p><strong>Conference/Journal:</strong> XYZ Conference, 2023</p>
+            <div class="paper-buttons">
+                <button onclick="toggleAbstract('abstract1')">Abstract</button>
+                <a href="paper1.pdf">Full Paper</a>
+            </div>
+            <div id="abstract1" class="abstract">
+                <p>This is the abstract for Paper 1. It provides a brief summary of the research, methodology, and key findings.</p>
+            </div>
+        </article>
+        
+        <article>
+            <h3>Title of Paper 2</h3>
+            <p><strong>Authors:</strong> C. Author, D. Author, Siddharth Roheda</p>
+            <p><strong>Conference/Journal:</strong> ABC Journal, 2022</p>
+            <div class="paper-buttons">
+                <button onclick="toggleAbstract('abstract2')">Abstract</button>
+                <a href="paper2.pdf">Full Paper</a>
+            </div>
+            <div id="abstract2" class="abstract">
+                <p>This is the abstract for Paper 2. It provides a brief summary of the research, methodology, and key findings.</p>
+            </div>
+        </article>
+        
+        <!-- Add more papers as needed -->
+    </section>
+
+    <a href="index.html">Back to Home</a>
+
+</body>
+</html>
