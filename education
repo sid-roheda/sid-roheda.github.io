@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Dr. Siddharth Roheda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Education</h1>
+    </header>
+
+    <section>
+        <h2>North Carolina State University</h2>
+        <p><strong>PhD, Electrical Engineering</strong> (2015 - 2020)</p>
+        <p><strong>MSc, Electrical Engineering</strong></p>
+
+        <h2>Nirma Institute of Technology</h2>
+        <p><strong>BTech, Electronics and Communication Engineering</strong> (2011 - 2015)</p>
+    </section>
+
+    <a href="index.html">Back to Home</a>
+
+</body>
+</html>
