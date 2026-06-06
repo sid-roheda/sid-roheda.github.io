@@ -3,171 +3,422 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications - Dr. Siddharth Roheda</title>
+    <title>Publications — Dr. Siddharth Roheda</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .paper-buttons {
-            margin-top: 10px;
-        }
-        .paper-buttons button {
-            display: inline-block;
-            padding: 5px 10px;
-            margin-right: 5px;
-            background-color: #007bff;
-            color: white;
-            text-decoration: none;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .paper-buttons button:hover {
-            background-color: #0056b3;
-        }
-        .abstract {
-            display: none;
-            margin-top: 10px;
-            padding: 10px;
-            border-left: 3px solid #007bff;
-            background-color: #f9f9f9;
-        }
-        .conference-logo {
-            width: 100px;
-            height: auto;
-            vertical-align: middle;
-            margin-right: 10px;
-        }
-    </style>
-    <script>
-        function toggleAbstract(id) {
-            var abstract = document.getElementById(id);
-            if (abstract.style.display === "none" || abstract.style.display === "") {
-                abstract.style.display = "block";
-            } else {
-                abstract.style.display = "none";
-            }
-        }
-    </script>
 </head>
 <body>
 
-    <header>
+    <nav class="site-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="publications.html" class="active">Publications</a></li>
+            <li><a href="patents.html">Patents</a></li>
+            <li><a href="awards.html">Awards</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
         <h1>Publications</h1>
     </header>
 
-    <section>
-        <h2>Selected Publications</h2>
-        
-        <article>
-            <h3><img src="cvpr2024-4.png" alt="XYZ Conference Logo" class="conference-logo"> MR-VNet: Media Restoration using Volterra Networks</h3>
-            <p><strong>Authors:</strong> Siddharth Roheda, Amit Unde, Loay Rashid</p>
-            <div class="paper-buttons">
-                <button onclick="toggleAbstract('abstract1')">Abstract</button>
-                <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Roheda_MR-VNet_Media_Restoration_using_Volterra_Networks_CVPR_2024_paper.pdf" target="_blank">Full Paper</a>
-            </div>
-            <div id="abstract1" class="abstract">
-                <p>This research paper presents a novel class of restoration network architecture based on the Volterra series formulation. By incorporating non-linearity into the system response function through higher order convolutions instead of traditional activation functions, we introduce a general framework for image/video restoration. Through extensive experimentation, we demonstrate that our proposed architecture achieves state-of-the-art (SOTA) performance in the field of Image/Video Restoration. Moreover, we establish that the recently introduced Non-Linear Activation Free Network (NAF-NET) can be considered a special case within the broader class of Volterra Neural Networks. These findings highlight the potential of Volterra Neural Networks as a versatile and powerful tool for addressing complex restoration tasks in computer vision.</p>
-            </div>
-        </article>
-        
-        <article>
-            <h3><img src="JMLR.png" alt="ABC Journal Logo" class="conference-logo"> Volterra Neural Networks (VNNs)</h3>
-            <p><strong>Authors:</strong> Siddharth Roheda, Hamid Krim, Bo Jiang</p>
-            <div class="paper-buttons">
-                <button onclick="toggleAbstract('abstract2')">Abstract</button>
-                <a href="https://www.jmlr.org/papers/volume25/21-1082/21-1082.pdf" target="_blank">Full Paper</a>
-            </div>
-            <div id="abstract2" class="abstract">
-                <p>The importance of inference in Machine Learning (ML) has led to an explosive number of different proposals in ML, and particularly in Deep Learning. In an attempt to reduce the complexity of Convolutional Neural Networks, we propose a Volterra filter-inspired Network architecture. This architecture introduces controlled non-linearities in the form of interactions between the delayed input samples of data. We propose a cascaded implementation of Volterra Filtering so as to significantly reduce the number of parameters required to carry out the same classification task as that of a conventional Neural Network. We demonstrate an efficient parallel implementation of this Volterra Neural Network (VNN), along with its remarkable performance while retaining a relatively simpler and potentially more tractable structure. Furthermore, we show a rather sophisticated adaptation of this network to nonlinearly fuse the RGB (spatial) information and the Optical Flow (temporal) information of a video sequence for action recognition. The proposed approach is evaluated on UCF-101 and HMDB-51 datasets for action recognition, and is shown to outperform state of the art CNN approaches.</p>
-            </div>
-        </article>
+    <main>
 
-         <article>
-            <h3><img src="ICIP-2023.png" alt="ICIP Logo" class="conference-logo"> Fast Optimal Transport for Latent Domain Adaptation</h3>
-            <p><strong>Authors:</strong> Siddharth Roheda, Ashkan Panahi, Hamid Krim</p>
-            <div class="paper-buttons">
-                <button onclick="toggleAbstract('abstract3')">Abstract</button>
-                <a href="https://arxiv.org/pdf/2210.00479" target="_blank">Full Paper</a>
-            </div>
-            <div id="abstract3" class="abstract">
-                <p>In this paper, we address the problem of unsupervised Domain Adaptation. The need for such an adaptation arises when the distribution of the target data differs from that which is used to develop the model and the ground truth information of the target data is unknown. We propose an algorithm that uses optimal transport theory with a verifiably efficient and implementable solution to learn the best latent feature representation. This is achieved by minimizing the cost of transporting the samples from the target domain to the distribution of the source domain.</p>
-            </div>
-        </article>
+        <!-- ===== 2026 ===== -->
+        <div class="section-label">2026</div>
+        <div class="pub-list">
 
-        <article>
-            <h3><img src="elsevier_logo.png" alt="Elsevier Logo" class="conference-logo"> Event Driven Sensor Fusion</h3>
-            <p><strong>Authors:</strong> Siddharth Roheda, Hamid Krim, Zhi-Quan Luo, Tianfu Wu</p>
-            <div class="paper-buttons">
-                <button onclick="toggleAbstract('abstract4')">Abstract</button>
-                <a href="https://arxiv.org/pdf/1904.11520" target="_blank">Full Paper</a>
+            <div class="pub-card">
+                <div class="pub-top">
+                    <img src="aaai20.png" alt="AAAI" class="pub-venue-logo">
+                    <div class="pub-content">
+                        <span class="pub-venue-badge">AAAI 2026</span>
+                        <div class="pub-title">CART: Compositional Auto-Regressive Transformer for Image Generation</div>
+                        <div class="pub-authors">Siddharth Roheda, Rohit Chowdhury, Aniruddha Bala, Rohan Jaiswal</div>
+                        <div class="pub-actions">
+                            <button class="btn-abstract" onclick="toggleAbstract('cart')">Abstract</button>
+                            <a href="https://arxiv.org/abs/2411.10180" target="_blank" class="btn-paper">arXiv ↗</a>
+                        </div>
+                        <div id="cart" class="abstract-panel">
+                            A novel Auto-Regressive image generation approach that models images as hierarchical compositions of interpretable visual layers. CART decomposes image generation into structured, auto-regressive predictions, enabling more controllable and interpretable generation.
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="abstract4" class="abstract">
-                <p>This paper presents a technique which exploits the occurrence of certain events as observed by different sensors, to detect and classify objects. This technique explores the extent of dependence between features being observed by the sensors, and generates more informed probability distributions over the events. Provided some additional information about the features of the object, this fusion technique can outperform other existing decision level fusion approaches that may not take into account the relationship between different features. Furthermore, this paper addresses the issue of coping with damaged sensors when using the model, by learning a hidden space between sensor modalities which can be exploited to safeguard detection performance.</p>
-            </div>
-        </article>
 
-        <article>
-            <h3><img src="elsevier_logo.png" alt="Elsevier Logo" class="conference-logo"> Latent Code-Based Fusion: A Volterra Neural Network Approach</h3>
-            <p><strong>Authors:</strong> Sally Ghanem, Siddharth Roheda, Hamid Krim</p>
-            <div class="paper-buttons">
-                <button onclick="toggleAbstract('abstract5')">Abstract</button>
-                <a href="https://www.sciencedirect.com/science/article/pii/S2667305323000352">Full Paper</a>
+            <div class="pub-card">
+                <div class="pub-top">
+                    <img src="SP18Logo.png" alt="ICASSP" class="pub-venue-logo">
+                    <div class="pub-content">
+                        <span class="pub-venue-badge">ICASSP 2026</span>
+                        <div class="pub-title">VNODE: A Piecewise Continuous Volterra Neural Network</div>
+                        <div class="pub-authors">Siddharth Roheda, Aniruddha Bala, Rohit Chowdhury, Rohan Jaiswal</div>
+                        <div class="pub-actions">
+                            <button class="btn-abstract" onclick="toggleAbstract('vnode')">Abstract</button>
+                            <a href="https://arxiv.org/abs/2509.24659" target="_blank" class="btn-paper">arXiv ↗</a>
+                        </div>
+                        <div id="vnode" class="abstract-panel">
+                            Introduces Volterra Neural Ordinary Differential Equations — a piecewise continuous neural network architecture for image classification that extends the Volterra series formulation into the continuous-time domain.
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="abstract5" class="abstract">
-                <p>We propose a deep structure encoder using Volterra Neural Networks (VNNs) to seek a latent representation of multi-modal data whose features are jointly captured by a union of subspaces. The so-called self-representation embedding of the latent codes leads to a simplified fusion which is driven by a similarly constructed decoding. The Volterra Filter architecture achieved reduction in parameter complexity is primarily due to controlled non-linearities being introduced by the higher-order convolutions in lieu of generalized activation functions. Experimental results on two different datasets have shown a significant improvement in the clustering performance for VNNs auto-encoder over conventional Convolutional Neural Networks (CNNs) auto-encoder. In addition, we also show that the proposed approach demonstrates a much-improved sample complexity over CNN-based auto-encoder with a robust classification performance.</p>
-            </div>
-        </article>
 
-        <article>
-            <h3><img src="aaai20.png" alt="Elsevier Logo" class="conference-logo"> Conquering The CNN Over-Parameterization Dilemma: A Volterra Filtering Approach For Action Recognition</h3>
-            <p><strong>Authors:</strong> Siddharth Roheda, Hamid Krim</p>
-            <div class="paper-buttons">
-                <button onclick="toggleAbstract('abstract6')">Abstract</button>
-                <a href="https://ojs.aaai.org/index.php/AAAI/article/view/6870">Full Paper</a>
+            <div class="pub-card">
+                <div class="pub-top">
+                    <img src="SP18Logo.png" alt="ICASSP" class="pub-venue-logo">
+                    <div class="pub-content">
+                        <span class="pub-venue-badge">ICASSP 2026</span>
+                        <div class="pub-title">GalaxyEdit: Large-Scale Image Editing Dataset with Enhanced Diffusion Adapter</div>
+                        <div class="pub-authors">Rohan Jaiswal, Aniruddha Bala, Siddharth Roheda, Rohit Chowdhury, Loay Rashid</div>
+                        <div class="pub-actions">
+                            <button class="btn-abstract" onclick="toggleAbstract('galaxy')">Abstract</button>
+                            <a href="https://arxiv.org/abs/2411.13794" target="_blank" class="btn-paper">arXiv ↗</a>
+                        </div>
+                        <div id="galaxy" class="abstract-panel">
+                            Presents GalaxyEdit, a large-scale image editing dataset paired with an enhanced diffusion adapter for controllable, high-fidelity image editing using generative diffusion models.
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="abstract6" class="abstract">
-                <p>The importance of inference in Machine Learning (ML) has led to an explosive number of different proposals in ML, and particularly in Deep Learning. In an attempt to reduce the complexity of Convolutional Neural Networks, we propose a Volterra filter-inspired Network architecture. This architecture introduces controlled non-linearities in the form of interactions between the delayed input samples of data. We propose a cascaded implementation of Volterra Filtering so as to significantly reduce the number of parameters required to carry out the same classification task as that of a conventional Neural Network. We demonstrate an efficient parallel implementation of this Volterra Neural Network (VNN), along with its remarkable performance while retaining a relatively simpler and potentially more tractable structure. Furthermore, we show a rather sophisticated adaptation of this network to nonlinearly fuse the RGB (spatial) information and the Optical Flow (temporal) information of a video sequence for action recognition. The proposed approach is evaluated on UCF-101 and HMDB-51 datasets for action recognition, and is shown to outperform state of the art CNN approaches.</p>
-            </div>
-        </article>
 
-        <article>
-            <h3><img src="ieee-sj.png" alt="Elsevier Logo" class="conference-logo"> Robust Multi-Modal Sensor Fusion: An Adversarial Approach</h3>
-            <p><strong>Authors:</strong> Siddharth Roheda, Hamid Krim, Benjamin S Riggan</p>
-            <div class="paper-buttons">
-                <button onclick="toggleAbstract('abstract7')">Abstract</button>
-                <a href="https://ieeexplore.ieee.org/abstract/document/9174786">Full Paper</a>
-            </div>
-            <div id="abstract7" class="abstract">
-                <p>In recent years, multi-modal fusion has attracted a lot of research interest, both in academia, and in industry. Multimodal fusion entails the combination of information from a set of different types of sensors. Exploiting complementary information from different sensors, we show that target detection and classification problems can greatly benefit from this fusion approach and result in a performance increase. To achieve this gain, the information fusion from various sensors is shown to require some principled strategy to ensure that additional information is constructively used, and has a positive impact on performance. We subsequently demonstrate the viability of the proposed fusion approach by weakening the strong dependence on the functionality of all sensors, hence introducing additional flexibility in our solution and lifting the severe limitation in unconstrained surveillance settings with potential environmental impact. Our proposed data driven approach to multimodal fusion, exploits selected optimal features from an estimated latent space of data across all modalities. This hidden space is learned via a generative network conditioned on individual sensor modalities. The hidden space, as an intrinsic structure, is then exploited in detecting damaged sensors, and in subsequently safeguarding the performance of the fused sensor system. Experimental results show that such an approach can achieve automatic system robustness against noisy/damaged sensors.</p>
-            </div>
-        </article>
+        </div>
 
-        <article>
-            <h3><img src="SP18Logo.png" alt="Elsevier Logo" class="conference-logo"> Cross-Modality Distillation: A Case for Conditional Generative Adversarial Networks</h3>
-            <p><strong>Authors:</strong> Siddharth Roheda, Benjamin S Riggan, Hamid Krim, Liyi Dai</p>
-            <div class="paper-buttons">
-                <button onclick="toggleAbstract('abstract8')">Abstract</button>
-                <a href="https://ieeexplore.ieee.org/abstract/document/8462082">Full Paper</a>
-            </div>
-            <div id="abstract8" class="abstract">
-                <p>In this paper, we propose to use a Conditional Generative Adversarial Network (CGAN) for distilling (i.e. transferring) knowledge from sensor data and enhancing low-resolution target detection. In unconstrained surveillance settings, sensor measurements are often noisy, degraded, corrupted, and even missing/absent, thereby presenting a significant problem for multi-modal fusion. We therefore specifically tackle the problem of a missing modality in our attempt to propose an algorithm based on CGANs to generate representative information from the missing modalities when given some other available modalities. Despite modality gaps, we show that one can distill knowledge from one set of modalities to another. Moreover, we demonstrate that it achieves better performance than traditional approaches and recent teacher-student models.</p>
-            </div>
-        </article>
+        <!-- ===== 2025 ===== -->
+        <div class="section-label" style="margin-top:40px;">2025</div>
+        <div class="pub-list">
 
-        <article>
-            <h3><img src="eusipco2018.jpg" alt="Elsevier Logo" class="conference-logo"> Decision Level Fusion: An Event Driven Approach</h3>
-            <p><strong>Authors:</strong> Siddharth Roheda, Hamid Krim, Zhi-Quan Luo, Tianfu Wu</p>
-            <div class="paper-buttons">
-                <button onclick="toggleAbstract('abstract9')">Abstract</button>
-                <a href="https://ieeexplore.ieee.org/document/8553412">Full Paper</a>
+            <div class="pub-card">
+                <div class="pub-top">
+                    <img src="iccv_logo.png" alt="ICCV 2025" class="pub-venue-logo">
+                    <div class="pub-content">
+                        <span class="pub-venue-badge">ICCV 2025</span>
+                        <div class="pub-title">DCT-Shield: A Robust Frequency Domain Defense against Malicious Image Editing</div>
+                        <div class="pub-authors">Aniruddha Bala, Rohit Chowdhury, Rohan Jaiswal, Siddharth Roheda</div>
+                        <div class="pub-actions">
+                            <button class="btn-abstract" onclick="toggleAbstract('dct')">Abstract</button>
+                            <a href="https://arxiv.org/abs/2504.17894" target="_blank" class="btn-paper">arXiv ↗</a>
+                        </div>
+                        <div id="dct" class="abstract-panel">
+                            Proposes DCT-Shield, a frequency-domain defense that protects images against malicious AI-based editing by embedding robust perturbations in the DCT domain, preventing unauthorized manipulation while preserving visual quality.
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="abstract9" class="abstract">
-                <p>This paper presents a technique that combines the occurrence of certain events, as observed by different sensors, in order to detect and classify objects. This technique explores the extent of dependence between features being observed by the sensors, and generates more informed probability distributions over the events. Provided some additional information about the features of the object, this fusion technique can outperform other existing decision level fusion approaches that may not take into account the relationship between different features.</p>
+
+            <div class="pub-card">
+                <div class="pub-top">
+                    <img src="arxiv_logo.png" alt="arXiv" class="pub-venue-logo">
+                    <div class="pub-content">
+                        <span class="pub-venue-badge">arXiv 2025</span>
+                        <div class="pub-title">LLVD: LSTM-based Explicit Motion Modeling in Latent Space for Blind Video Denoising</div>
+                        <div class="pub-authors">Loay Rashid, Siddharth Roheda, Amit Unde</div>
+                        <div class="pub-actions">
+                            <button class="btn-abstract" onclick="toggleAbstract('llvd')">Abstract</button>
+                            <a href="https://arxiv.org/abs/2501.05744" target="_blank" class="btn-paper">arXiv ↗</a>
+                        </div>
+                        <div id="llvd" class="abstract-panel">
+                            LLVD leverages LSTM-based explicit motion modeling in a compressed latent space for blind video denoising, enabling effective temporal coherence without prior knowledge of noise statistics.
+                        </div>
+                    </div>
+                </div>
             </div>
-        </article>
-        <!-- Add more papers as needed -->
-    </section>
 
-    <a href="index.html">Back to Home</a>
+            <div class="pub-card">
+                <div class="pub-top">
+                    <img src="arxiv_logo.png" alt="arXiv" class="pub-venue-logo">
+                    <div class="pub-content">
+                        <span class="pub-venue-badge">arXiv 2025</span>
+                        <div class="pub-title">Vid-Freeze: Protecting Images from Malicious Image-to-Video Generation via Temporal Freezing</div>
+                        <div class="pub-authors">Rohit Chowdhury, Aniruddha Bala, Rohan Jaiswal, Siddharth Roheda</div>
+                        <div class="pub-actions">
+                            <button class="btn-abstract" onclick="toggleAbstract('vidfreeze')">Abstract</button>
+                            <a href="https://arxiv.org/abs/2509.23279" target="_blank" class="btn-paper">arXiv ↗</a>
+                        </div>
+                        <div id="vidfreeze" class="abstract-panel">
+                            Vid-Freeze protects images from malicious image-to-video generation by introducing temporal freezing perturbations that disrupt video synthesis models while remaining imperceptible to human viewers.
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+        </div>
+
+        <!-- ===== 2024 ===== -->
+        <div class="section-label" style="margin-top:40px;">2024</div>
+        <div class="pub-list">
+
+            <div class="pub-card">
+                <div class="pub-top">
+                    <img src="cvpr2024-4.png" alt="CVPR 2024" class="pub-venue-logo">
+                    <div class="pub-content">
+                        <span class="pub-venue-badge">CVPR 2024</span>
+                        <div class="pub-title">MR-VNet: Media Restoration using Volterra Networks</div>
+                        <div class="pub-authors">Siddharth Roheda, Amit Unde, Loay Rashid</div>
+                        <div class="pub-actions">
+                            <button class="btn-abstract" onclick="toggleAbstract('mrvnet')">Abstract</button>
+                            <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Roheda_MR-VNet_Media_Restoration_using_Volterra_Networks_CVPR_2024_paper.pdf" target="_blank" class="btn-paper">Full Paper ↗</a>
+                        </div>
+                        <div id="mrvnet" class="abstract-panel">
+                            A restoration network based on the Volterra series formulation, incorporating non-linearity through higher-order convolutions instead of activation functions. Achieves state-of-the-art performance in Image/Video Restoration and establishes NAF-NET as a special case of the Volterra Neural Network class.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-top">
+                    <img src="JMLR.png" alt="JMLR" class="pub-venue-logo">
+                    <div class="pub-content">
+                        <span class="pub-venue-badge">JMLR 2024</span>
+                        <div class="pub-title">Volterra Neural Networks (VNNs)</div>
+                        <div class="pub-authors">Siddharth Roheda, Hamid Krim, Bo Jiang</div>
+                        <div class="pub-actions">
+                            <button class="btn-abstract" onclick="toggleAbstract('vnn')">Abstract</button>
+                            <a href="https://www.jmlr.org/papers/volume25/21-1082/21-1082.pdf" target="_blank" class="btn-paper">Full Paper ↗</a>
+                            <a href="https://arxiv.org/abs/1910.09616" target="_blank" class="btn-paper btn-paper-alt">arXiv ↗</a>
+                        </div>
+                        <div id="vnn" class="abstract-panel">
+                            A Volterra filter-inspired network architecture introducing controlled non-linearities through interactions between delayed input samples. The cascaded parallel implementation reduces parameters significantly while outperforming state-of-the-art CNN approaches on UCF-101 and HMDB-51 for action recognition.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ===== 2023 ===== -->
+        <div class="section-label" style="margin-top:40px;">2023</div>
+        <div class="pub-list">
+
+            <div class="pub-card">
+                <div class="pub-top">
+                    <img src="ICIP-2023.png" alt="ICIP 2023" class="pub-venue-logo">
+                    <div class="pub-content">
+                        <span class="pub-venue-badge">ICIP 2023</span>
+                        <div class="pub-title">Fast Optimal Transport for Latent Domain Adaptation</div>
+                        <div class="pub-authors">Siddharth Roheda, Ashkan Panahi, Hamid Krim</div>
+                        <div class="pub-actions">
+                            <button class="btn-abstract" onclick="toggleAbstract('fot')">Abstract</button>
+                            <a href="https://arxiv.org/abs/2210.00479" target="_blank" class="btn-paper">Full Paper ↗</a>
+                        </div>
+                        <div id="fot" class="abstract-panel">
+                            Addresses unsupervised Domain Adaptation using optimal transport theory with a verifiably efficient solution to learn the best latent feature representation, by minimizing the cost of transporting target domain samples to the source domain distribution.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-top">
+                    <img src="elsevier_logo.png" alt="Elsevier" class="pub-venue-logo">
+                    <div class="pub-content">
+                        <span class="pub-venue-badge">Elsevier · Intelligent Systems with Applications 2023</span>
+                        <div class="pub-title">Latent Code-Based Fusion: A Volterra Neural Network Approach</div>
+                        <div class="pub-authors">Sally Ghanem, Siddharth Roheda, Hamid Krim</div>
+                        <div class="pub-actions">
+                            <button class="btn-abstract" onclick="toggleAbstract('lcf')">Abstract</button>
+                            <a href="https://www.sciencedirect.com/science/article/pii/S2667305323000352" target="_blank" class="btn-paper">Full Paper ↗</a>
+                            <a href="https://arxiv.org/abs/2104.04829" target="_blank" class="btn-paper btn-paper-alt">arXiv ↗</a>
+                        </div>
+                        <div id="lcf" class="abstract-panel">
+                            A deep structure encoder using VNNs to seek a latent representation of multi-modal data from a union of subspaces. Shows significant improvement in clustering performance over CNN auto-encoders, with improved sample complexity and robust classification.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-top">
+                    <img src="ieee-sj.png" alt="IEEE" class="pub-venue-logo">
+                    <div class="pub-content">
+                        <span class="pub-venue-badge">ICVGIP 2023</span>
+                        <div class="pub-title">Degradation Aware Multi-Scale Approach to No Reference Image Quality Assessment</div>
+                        <div class="pub-authors">Siddharth Roheda, Amit S. Unde, Loay Rashid, A. Ameta</div>
+                        <div class="pub-actions">
+                            <button class="btn-abstract" onclick="toggleAbstract('iqa')">Abstract</button>
+                        </div>
+                        <div id="iqa" class="abstract-panel">
+                            A multi-scale no-reference IQA method that is aware of different degradation types, enabling better perceptual quality estimation without requiring a pristine reference image.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ===== 2020–2021 ===== -->
+        <div class="section-label" style="margin-top:40px;">2020 – 2021</div>
+        <div class="pub-list">
+
+            <div class="pub-card">
+                <div class="pub-top">
+                    <img src="aaai20.png" alt="AAAI 2020" class="pub-venue-logo">
+                    <div class="pub-content">
+                        <span class="pub-venue-badge">AAAI 2020</span>
+                        <div class="pub-title">Conquering The CNN Over-Parameterization Dilemma: A Volterra Filtering Approach For Action Recognition</div>
+                        <div class="pub-authors">Siddharth Roheda, Hamid Krim</div>
+                        <div class="pub-actions">
+                            <button class="btn-abstract" onclick="toggleAbstract('aaai')">Abstract</button>
+                            <a href="https://ojs.aaai.org/index.php/AAAI/article/view/6870" target="_blank" class="btn-paper">Full Paper ↗</a>
+                        </div>
+                        <div id="aaai" class="abstract-panel">
+                            A Volterra filter-inspired network that reduces CNN complexity via controlled non-linearities from delayed input interactions. The cascaded parallel implementation significantly reduces parameters while outperforming state-of-the-art CNN approaches on UCF-101 and HMDB-51.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-top">
+                    <img src="SP18Logo.png" alt="ICASSP 2020" class="pub-venue-logo">
+                    <div class="pub-content">
+                        <span class="pub-venue-badge">ICASSP 2020</span>
+                        <div class="pub-title">Commuting Conditional GANs for Multi-Modal Fusion</div>
+                        <div class="pub-authors">Siddharth Roheda, Hamid Krim, Benjamin S. Riggan</div>
+                        <div class="pub-actions">
+                            <button class="btn-abstract" onclick="toggleAbstract('ccgan')">Abstract</button>
+                        </div>
+                        <div id="ccgan" class="abstract-panel">
+                            A conditional GAN-based multi-modal sensor fusion framework where generative models are trained to commute, enabling consistent cross-modal synthesis and robust fusion even under sensor degradation.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-top">
+                    <img src="ieee-sj.png" alt="IEEE Sensors Journal" class="pub-venue-logo">
+                    <div class="pub-content">
+                        <span class="pub-venue-badge">IEEE Sensors Journal 2020</span>
+                        <div class="pub-title">Robust Multi-Modal Sensor Fusion: An Adversarial Approach</div>
+                        <div class="pub-authors">Siddharth Roheda, Hamid Krim, Benjamin S. Riggan</div>
+                        <div class="pub-actions">
+                            <button class="btn-abstract" onclick="toggleAbstract('robust')">Abstract</button>
+                            <a href="https://ieeexplore.ieee.org/abstract/document/9174786" target="_blank" class="btn-paper">Full Paper ↗</a>
+                            <a href="https://arxiv.org/abs/1906.04115" target="_blank" class="btn-paper btn-paper-alt">arXiv ↗</a>
+                        </div>
+                        <div id="robust" class="abstract-panel">
+                            A data-driven approach to multi-modal fusion exploiting optimal features from a latent space learned by a generative network conditioned on individual modalities, used to detect damaged sensors and safeguard fused system performance.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-top">
+                    <img src="elsevier_logo.png" alt="Elsevier" class="pub-venue-logo">
+                    <div class="pub-content">
+                        <span class="pub-venue-badge">Signal Processing (Elsevier) 2021</span>
+                        <div class="pub-title">Event Driven Sensor Fusion</div>
+                        <div class="pub-authors">Siddharth Roheda, Hamid Krim, Zhi-Quan Luo, Tianfu Wu</div>
+                        <div class="pub-actions">
+                            <button class="btn-abstract" onclick="toggleAbstract('edsf')">Abstract</button>
+                            <a href="https://arxiv.org/abs/1904.11520" target="_blank" class="btn-paper">Full Paper ↗</a>
+                        </div>
+                        <div id="edsf" class="abstract-panel">
+                            Exploits events observed by different sensors to detect and classify objects by exploring feature dependence across modalities and generating informed probability distributions. Also addresses damaged sensors by learning a hidden inter-modal space.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-top">
+                    <img src="elsevier_logo.png" alt="Atmosphere" class="pub-venue-logo">
+                    <div class="pub-content">
+                        <span class="pub-venue-badge">Atmosphere (MDPI) 2021</span>
+                        <div class="pub-title">Atlantic Hurricane Activity Prediction: A Machine Learning Approach</div>
+                        <div class="pub-authors">T. Asthana, Hamid Krim, X. Sun, Siddharth Roheda, L. Xie</div>
+                        <div class="pub-actions">
+                            <button class="btn-abstract" onclick="toggleAbstract('hurricane')">Abstract</button>
+                        </div>
+                        <div id="hurricane" class="abstract-panel">
+                            Applies machine learning methods to predict Atlantic hurricane activity, demonstrating that data-driven models can capture the complex atmospheric dynamics governing hurricane formation and intensity.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ===== 2017–2018 ===== -->
+        <div class="section-label" style="margin-top:40px;">2017 – 2018</div>
+        <div class="pub-list">
+
+            <div class="pub-card">
+                <div class="pub-top">
+                    <img src="SP18Logo.png" alt="ICASSP 2018" class="pub-venue-logo">
+                    <div class="pub-content">
+                        <span class="pub-venue-badge">ICASSP 2018</span>
+                        <div class="pub-title">Cross-Modality Distillation: A Case for Conditional Generative Adversarial Networks</div>
+                        <div class="pub-authors">Siddharth Roheda, Benjamin S. Riggan, Hamid Krim, Liyi Dai</div>
+                        <div class="pub-actions">
+                            <button class="btn-abstract" onclick="toggleAbstract('cmd')">Abstract</button>
+                            <a href="https://ieeexplore.ieee.org/abstract/document/8462082" target="_blank" class="btn-paper">Full Paper ↗</a>
+                            <a href="https://arxiv.org/abs/1807.07682" target="_blank" class="btn-paper btn-paper-alt">arXiv ↗</a>
+                        </div>
+                        <div id="cmd" class="abstract-panel">
+                            Uses a Conditional GAN to distill knowledge across sensor modalities, generating representative information from missing modalities given available ones. Achieves better performance than traditional approaches and teacher-student models.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-top">
+                    <img src="eusipco2018.jpg" alt="EUSIPCO 2018" class="pub-venue-logo">
+                    <div class="pub-content">
+                        <span class="pub-venue-badge">EUSIPCO 2018</span>
+                        <div class="pub-title">Decision Level Fusion: An Event Driven Approach</div>
+                        <div class="pub-authors">Siddharth Roheda, Hamid Krim, Zhi-Quan Luo, Tianfu Wu</div>
+                        <div class="pub-actions">
+                            <button class="btn-abstract" onclick="toggleAbstract('dlf')">Abstract</button>
+                            <a href="https://ieeexplore.ieee.org/document/8553412" target="_blank" class="btn-paper">Full Paper ↗</a>
+                            <a href="https://arxiv.org/abs/1809.09166" target="_blank" class="btn-paper btn-paper-alt">arXiv ↗</a>
+                        </div>
+                        <div id="dlf" class="abstract-panel">
+                            Combines sensor-observed events to detect and classify objects by exploring feature dependence across sensors and generating more informed probability distributions over events.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-top">
+                    <img src="ieee-sj.png" alt="Electronic Imaging" class="pub-venue-logo">
+                    <div class="pub-content">
+                        <span class="pub-venue-badge">Electronic Imaging 2017</span>
+                        <div class="pub-title">A Multi-Scale Approach to Skin Pixel Detection</div>
+                        <div class="pub-authors">Siddharth Roheda</div>
+                        <div class="pub-actions">
+                            <button class="btn-abstract" onclick="toggleAbstract('skin')">Abstract</button>
+                        </div>
+                        <div id="skin" class="abstract-panel">
+                            A multi-scale approach to detecting skin pixels in images, with applications to video privacy protection and content moderation systems.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/siddharthroheda" target="_blank">LinkedIn</a></p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="experience.html">Experience</a>
+            <a href="education.html">Education</a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleAbstract(id) {
+            const el = document.getElementById(id);
+            el.style.display = el.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
 </body>
 </html>

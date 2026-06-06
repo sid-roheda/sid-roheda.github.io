@@ -3,22 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dr. Siddharth Roheda</title>
+    <title>Dr. Siddharth Roheda — AI Researcher</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <h1>Dr. Siddharth Roheda</h1>
-        <img src="profile.png" alt="Dr. Siddharth Roheda" 
-     style="width: 150px; height: 150px; border-radius: 50%; display: block; margin: 15px auto; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);">
-
-        <p>Dedicated researcher with interests in Signal Processing, Sensor Fusion, Machine Learning, Deep Learning, and Generative Modeling.</p>
-    </header>
-
-    <nav>
+    <nav class="site-nav">
         <ul>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="experience.html">Experience</a></li>
             <li><a href="education.html">Education</a></li>
             <li><a href="publications.html">Publications</a></li>
@@ -27,9 +19,48 @@
         </ul>
     </nav>
 
+    <header class="hero">
+        <div class="hero-inner">
+            <img src="profile.png" alt="Dr. Siddharth Roheda" class="hero-avatar">
+            <div class="hero-title-badge">Senior Chief Engineer · Samsung Research</div>
+            <h1>Dr. Siddharth Roheda</h1>
+            <p class="tagline">
+                Dedicated researcher at the intersection of Signal Processing, Generative AI, and Deep Learning —
+                building intelligent systems that see, understand, and restore the visual world.
+            </p>
+            <div class="hero-chips">
+                <span class="chip">Signal Processing</span>
+                <span class="chip">Sensor Fusion</span>
+                <span class="chip">Machine Learning</span>
+                <span class="chip">Deep Learning</span>
+                <span class="chip">Generative Modeling</span>
+                <span class="chip">Volterra Neural Networks</span>
+            </div>
+            <div class="hero-cta">
+                <a href="publications.html" class="btn-primary">View Publications</a>
+                <a href="experience.html" class="btn-outline">Experience</a>
+                <a href="https://www.linkedin.com/in/siddharthroheda" target="_blank" class="btn-outline">LinkedIn ↗</a>
+            </div>
+        </div>
+    </header>
+
     <footer>
-        <p>Connect with me on <a href="https://www.linkedin.com/in/siddharthroheda">LinkedIn</a></p>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/siddharthroheda" target="_blank">LinkedIn</a></p>
+        <div class="footer-links">
+            <a href="experience.html">Experience</a>
+            <a href="education.html">Education</a>
+            <a href="publications.html">Publications</a>
+            <a href="patents.html">Patents</a>
+            <a href="awards.html">Awards</a>
+        </div>
     </footer>
 
+    <script>
+        document.body.classList.add('js-animate');
+        const observer = new IntersectionObserver(els => {
+            els.forEach(el => { if (el.isIntersecting) el.target.classList.add('visible'); });
+        }, { threshold: 0.05 });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>

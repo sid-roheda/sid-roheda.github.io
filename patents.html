@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patents — Dr. Siddharth Roheda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="site-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="patents.html" class="active">Patents</a></li>
+            <li><a href="awards.html">Awards</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
+        <h1>Patents</h1>
+    </header>
+
+    <main>
+
+        <div class="section-label">Granted</div>
+        <div class="pub-list">
+
+            <div class="pub-card">
+                <div class="pub-top">
+                    <img src="noa_logo.png" alt="NOA Inc." class="pub-venue-logo">
+                    <div class="pub-content">
+                        <span class="pub-venue-badge">US Patent 11,155,725 · Granted Oct 2021</span>
+                        <div class="pub-title">Method and Apparatus for Redacting Video for Compression and Identification of Releasing Party</div>
+                        <div class="pub-authors">Jaime A. Borras, Siddharth Roheda &nbsp;·&nbsp; Assignee: NOA Inc.</div>
+                        <div class="pub-actions">
+                            <button class="btn-abstract" onclick="toggleAbstract('p1b')">Abstract</button>
+                            <a href="https://patents.google.com/patent/US11155725B2/en" target="_blank" class="btn-paper">Google Patents ↗</a>
+                        </div>
+                        <div id="p1b" class="abstract-panel">
+                            A system for protecting sensitive video by automatically detecting and obscuring human skin tones. Redaction information is encrypted and stored with the video. When authorized personnel need to view unredacted content, they use unique decryption keys to reconstruct the original video, which then receives a personalized digital watermark identifying the specific user — enabling organizations to trace unauthorized leaks back to their source. Key application: law enforcement and government agencies protecting surveillance footage.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section-label" style="margin-top:40px;">Filed / Pending</div>
+        <div class="pub-list">
+
+            <div class="pub-card">
+                <div class="pub-top">
+                    <img src="samsung_logo.png" alt="Samsung" class="pub-venue-logo">
+                    <div class="pub-content">
+                        <span class="pub-venue-badge">US 20220351334A1 · Filed Apr 2022 · Granted</span>
+                        <div class="pub-title">Method and Electronic Device for Multi-Functional Image Restoration</div>
+                        <div class="pub-authors">Siddharth Deepak Roheda, et al. &nbsp;·&nbsp; Assignee: Samsung Electronics Co. Ltd.</div>
+                        <div class="pub-actions">
+                            <button class="btn-abstract" onclick="toggleAbstract('p3')">Abstract</button>
+                            <a href="https://patents.google.com/patent/US20220351334A1/en" target="_blank" class="btn-paper">Google Patents ↗</a>
+                        </div>
+                        <div id="p3" class="abstract-panel">
+                            A system enabling restoration, enhancement, and segmentation of an input image at arbitrary resolution using a single trained ML model. The key innovation restructures image channels to match the model's input requirements — processing color channels separately for multiple restructurings, and together for single restructurings. This enables one model to handle images from 1 MP to 108+ MP, replacing multiple specialized networks and reducing device memory footprint.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-top">
+                    <img src="samsung_logo.png" alt="Samsung" class="pub-venue-logo">
+                    <div class="pub-content">
+                        <span class="pub-venue-badge">WO2023195833A1 · Filed Apr 2023 · PCT</span>
+                        <div class="pub-title">Method and Electronic Device for Detecting Blur in Image</div>
+                        <div class="pub-authors">Siddharth Deepak Roheda, Amit Satish Unde, Alok Shankarlal Shukla, et al. &nbsp;·&nbsp; Assignee: Samsung Electronics Co. Ltd.</div>
+                        <div class="pub-actions">
+                            <button class="btn-abstract" onclick="toggleAbstract('p4')">Abstract</button>
+                            <a href="https://patents.google.com/patent/WO2023195833A1/en" target="_blank" class="btn-paper">Google Patents ↗</a>
+                        </div>
+                        <div id="p4" class="abstract-panel">
+                            A system that identifies blur types and intensity in photographs, distinguishing between unintentional blur (motion, camera shake, focus failure) and intentional artistic effects (bokeh, portrait mode). By analyzing entropy patterns across image regions and fusing probability scores, the device determines whether blur correction is needed — avoiding degradation of artistic effects. Operates on single frames without frequency transforms, suitable for mobile devices.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-top">
+                    <img src="ncsu-logo.png" alt="NC State University" class="pub-venue-logo">
+                    <div class="pub-content">
+                        <span class="pub-venue-badge">US 20210279519A1 · Filed Jan 2021 · NC State University</span>
+                        <div class="pub-title">Volterra Neural Network and Method</div>
+                        <div class="pub-authors">Hamid Krim, Siddharth Roheda, Sally Ghanem &nbsp;·&nbsp; Assignee: North Carolina State University</div>
+                        <div class="pub-actions">
+                            <button class="btn-abstract" onclick="toggleAbstract('p5')">Abstract</button>
+                            <a href="https://patents.google.com/patent/US20210279519A1/en" target="_blank" class="btn-paper">Google Patents ↗</a>
+                        </div>
+                        <div id="p5" class="abstract-panel">
+                            A neural network architecture employing cascaded Volterra filters in hierarchical layers. The system uses repeated lower-order (2nd or 3rd order) filters to approximate high-order filters, significantly reducing computational parameters compared to conventional deep learning approaches. Introduces non-linearities through controlled higher-order convolutions rather than standard activation functions. Demonstrated on action recognition (UCF-101, HMDB-51) and multi-modal data fusion with improved noise robustness.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/siddharthroheda" target="_blank">LinkedIn</a></p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="experience.html">Experience</a>
+            <a href="publications.html">Publications</a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleAbstract(id) {
+            const el = document.getElementById(id);
+            el.style.display = el.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

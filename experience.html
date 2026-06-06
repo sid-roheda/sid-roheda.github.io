@@ -3,67 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experience - Dr. Siddharth Roheda</title>
+    <title>Experience — Dr. Siddharth Roheda</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .company-logo {
-            width: 100px; /* Adjust size as needed */
-            height: auto;
-            vertical-align: middle;
-            margin-right: 10px;
-        }
-    </style>
 </head>
 <body>
 
-    <header>
+    <nav class="site-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="experience.html" class="active">Experience</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="patents.html">Patents</a></li>
+            <li><a href="awards.html">Awards</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
         <h1>Experience</h1>
+        <p class="subtitle">A decade of research in AI, machine learning, and sensor fusion</p>
     </header>
 
-    <section>
-        <h2><img src="samsung_logo.png" alt="Samsung Logo" class="company-logo"> Samsung Research Institute (SRIB)</h2>
-        <ul>
-        <li>Photo Editing using Generative AI</li>
-        <li>Media Restoration</li>
-        <li>Media Quality Assessment</li>
-        </ul>
-        <p><strong>Senior Chief Engineer</strong> (Apr 2024 - Present)</p>
-        <p><strong>Chief Engineer</strong> (Oct 2021 - Apr 2024)</p>
-        <p><strong>Senior Lead Engineer</strong> (Jun 2021 - Oct 2021)</p>
-    </section>
+    <main>
+        <div class="section-label">Professional Timeline</div>
 
-    <section>
-        <h2><img src="ncsu-logo.png" alt="NC State University Logo" class="company-logo"> North Carolina State University</h2>
-        <ul>
-            <li>Volterra Neural Networks</li>
-            <li>Multi-Modal Sensor Fusion</li>
-            <li>Generative Networks</li>
-        </ul>
-        <p><strong>Post-Doctoral Researcher</strong> (Jul 2020 - Jun 2021)</p>
-        <p><strong>Graduate Research Assistant</strong> (Jul 2015 - Jul 2020)</p>
-    </section>
+        <div class="timeline">
 
-    <section>
-        <h2><img src="arl_logo.png" alt="Army Research Lab Logo" class="company-logo"> United States Army Research Lab</h2>
-        <ul>
-        <li>Multi-Modal Sensor Fusion</li>
-        <li>Knowledge Distillation</li>
-        <li>Damaged Sensor Fusion</li>
-        </ul>
-        <p><strong>Research Intern</strong> (Summer 2017, 2018)</p>
-    </section>
+            <div class="timeline-item fade-in">
+                <div class="timeline-header">
+                    <img src="samsung_logo.png" alt="Samsung" class="company-logo">
+                    <div>
+                        <h3>Samsung Research Institute (SRIB)</h3>
+                        <div class="company-name">Bangalore, India</div>
+                    </div>
+                </div>
+                <div class="roles">
+                    <div class="role-row">
+                        <span class="role-title">Senior Chief Engineer</span>
+                        <span class="role-date">Apr 2024 – Present</span>
+                    </div>
+                    <div class="role-row">
+                        <span class="role-title">Chief Engineer</span>
+                        <span class="role-date">Oct 2021 – Apr 2024</span>
+                    </div>
+                    <div class="role-row">
+                        <span class="role-title">Senior Lead Engineer</span>
+                        <span class="role-date">Jun 2021 – Oct 2021</span>
+                    </div>
+                </div>
+                <div class="tags">
+                    <span class="tag">Photo Editing with Generative AI</span>
+                    <span class="tag">Media Restoration</span>
+                    <span class="tag">Media Quality Assessment</span>
+                </div>
+            </div>
 
-    <section>
-        <h2><img src="noa_logo.png" alt="NOA Inc. Logo" class="company-logo"> NOA INC. | DBA | TERRAFLY INC.</h2>
-        <ul>
-        <li>Video Privacy Protection</li>
-        <li>Drone Vision</li>
-        <li>Activity Monitoring</li>
-        </ul>
-        <p><strong>Software Developer</strong> (May 2016 - Dec 2016)</p>
-    </section>
+            <div class="timeline-item fade-in">
+                <div class="timeline-header">
+                    <img src="ncsu-logo.png" alt="NC State" class="company-logo">
+                    <div>
+                        <h3>North Carolina State University</h3>
+                        <div class="company-name">Raleigh, NC, USA</div>
+                    </div>
+                </div>
+                <div class="roles">
+                    <div class="role-row">
+                        <span class="role-title">Post-Doctoral Researcher</span>
+                        <span class="role-date">Jul 2020 – Jun 2021</span>
+                    </div>
+                    <div class="role-row">
+                        <span class="role-title">Graduate Research Assistant</span>
+                        <span class="role-date">Jul 2015 – Jul 2020</span>
+                    </div>
+                </div>
+                <div class="tags">
+                    <span class="tag">Volterra Neural Networks</span>
+                    <span class="tag">Multi-Modal Sensor Fusion</span>
+                    <span class="tag">Generative Networks</span>
+                </div>
+            </div>
 
-    <a href="index.html">Back to Home</a>
+            <div class="timeline-item fade-in">
+                <div class="timeline-header">
+                    <img src="arl_logo.png" alt="Army Research Lab" class="company-logo">
+                    <div>
+                        <h3>United States Army Research Lab</h3>
+                        <div class="company-name">Adelphi, MD, USA</div>
+                    </div>
+                </div>
+                <div class="roles">
+                    <div class="role-row">
+                        <span class="role-title">Research Intern</span>
+                        <span class="role-date">Summer 2017, 2018</span>
+                    </div>
+                </div>
+                <div class="tags">
+                    <span class="tag">Multi-Modal Sensor Fusion</span>
+                    <span class="tag">Knowledge Distillation</span>
+                    <span class="tag">Damaged Sensor Fusion</span>
+                </div>
+            </div>
 
+            <div class="timeline-item fade-in">
+                <div class="timeline-header">
+                    <img src="noa_logo.png" alt="NOA Inc." class="company-logo">
+                    <div>
+                        <h3>NOA INC. | DBA | TERRAFLY INC.</h3>
+                        <div class="company-name">Florida, USA</div>
+                    </div>
+                </div>
+                <div class="roles">
+                    <div class="role-row">
+                        <span class="role-title">Software Developer</span>
+                        <span class="role-date">May 2016 – Dec 2016</span>
+                    </div>
+                </div>
+                <div class="tags">
+                    <span class="tag">Video Privacy Protection</span>
+                    <span class="tag">Drone Vision</span>
+                    <span class="tag">Activity Monitoring</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/siddharthroheda" target="_blank">LinkedIn</a></p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="publications.html">Publications</a>
+        </div>
+    </footer>
+
+    <script>
+        document.body.classList.add('js-animate');
+        const observer = new IntersectionObserver(els => {
+            els.forEach((el, i) => {
+                if (el.isIntersecting) {
+                    setTimeout(() => el.classList.add('visible'), i * 100);
+                }
+            });
+        }, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>
